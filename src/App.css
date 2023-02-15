@@ -1,0 +1,197 @@
+/* NAVBAR + FOOTER CSS */
+.me-auto{ /* navbar routing */ 
+  font-family: 'Zilla Slab', serif;
+}
+
+.bg-dark { /* navbar background color*/ 
+  background-color: #3C422E !important;
+}
+
+.footerContainer {
+  display: block !important;
+}
+
+.footerContainer h6 {
+  color: #F6E6D9;
+}
+
+.footer {
+  background-color: #a5aa52 !important;
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%; 
+}
+
+.footerTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footerCol {
+  padding: 20px;
+}
+
+.navbar-brand { /* navbar main title */
+  font-family: "Archivo Black", sans-serif;
+  color: #F6E6D9;
+}
+.navbar-brand:hover { 
+  color: #f3ecbf;
+}
+
+.nav-link {
+  color: #F6E6D9;
+  border: #F6E6D9;
+}
+.navbarButton {
+  border-radius: 23px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 9px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #F6E6D9;
+  --bs-btn-hover-color: #3C422E;
+  --bs-btn-hover-bg: #F6E6D9;
+  --bs-btn-active-bg: #F6E6D9;
+}
+.navbar-toggler {
+  border: none;
+  font-family: 'Zilla Slab', serif;
+  color: #F6E6D9;
+}
+
+/* header and midsection css -- used on all pages */
+.pageHeader {
+  color: #F6E6D9;
+  background-color: #3C422E;
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+  padding: 83px;
+}
+
+.pageMidSection {
+  color: #3C422E;
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+  padding: 70px;
+}
+
+.pageHeader h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* RECIPE PAGE CSS */
+
+.recipeLPContainer {
+  padding-top: 2rem;
+  max-width: 1000px;
+}
+
+.card {
+  border-color: #3C422E;
+  background-color: #F5F3E2;
+}
+
+.cardLine {
+  color:#3C422E;
+  opacity: 100%;
+  margin: 0px;
+}
+
+.recipeCardTitle {
+  font-family: 'Zilla Slab', serif;
+  color:#3C422E;
+  text-align: center;
+}
+
+.recipeCol {
+  padding: 13px;
+}
+
+.recipePageRecipeCardImg {
+  z-index: 1;
+}
+
+.recipeOverlay {
+  background-color: #3C422E;
+  border-radius: 25px;
+  height: calc( 100% - 114px);
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+  top: 20px;
+}
+
+/* HOME PAGE CSS*/
+.homePageContainer {
+  padding-top: 2rem;
+}
+
+.homePageContainerTop {
+  padding: 0;
+  margin: 0;
+  background-image: url("pages/olive\ tree.png");
+  max-width: 3000px;
+}
+
+.homePageContainerTop .homePageCardBody {
+  color: #F5F3E2;
+}
+
+.homePageCardBody {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Zilla Slab', serif;
+  color: #3c422e;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homePageCard {
+  border-color: #c9cc8f;
+  background-color: #c9cc8f;
+  background-image: url("pages/olive\ tree.png");
+  min-height: 250px;
+}
+
+.homePageRecipeCard {
+  border-color: #F5F3E2;
+  background-color: #F5F3E2;
+}
+
+.homePageRecipeCardImg {
+  border-radius: 25px;
+}
+
+/* ABOUT PAGE CSS */
+.aboutPageContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.aboutPageCard {
+  border: none;
+  height: 100%;
+}
+
+.aboutPageCol {
+  font-family: 'Zilla Slab', serif;
+  color:#3C422E;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutPageCol h2 {
+  font-size: 2.5rem;
+}
+
+.aboutPageImg {
+  border-radius: 300px 300px 25px 25px;
+}

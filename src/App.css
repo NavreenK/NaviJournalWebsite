@@ -125,6 +125,37 @@
   top: 20px;
 }
 
+.pagination{
+  --bs-pagination-border-color: #3C422E;
+  --bs-pagination-bg: #F5F3E2;
+  --bs-pagination-active-bg: #3C422E;
+  --bs-pagination-active-border-color: #3C422E;
+  --bs-pagination-hover-bg: #a5aa52;
+  --bs-pagination-hover-border-color: #a5aa52;
+  --bs-pagination-hover-color: #F5F3E2;
+  --bs-pagination-color: #3C422E;
+}
+
+.recipeButton {
+  background-color: #3C422E;
+  border-color: #3C422E;
+  border-radius: 63px;
+  width: 50%;
+  align-self: center;
+  margin: 17px;
+
+  --bs-btn-hover-bg: #a5aa52;
+  --bs-btn-hover-border-color: #a5aa52;
+  --bs-btn-hover-color: #F5F3E2;
+  --bs-btn-active-color: #F5F3E2;
+  --bs-btn-active-bg: #a5aa52;
+  --bs-btn-active-border-color: #a5aa52;
+}
+
+.recipePagination {
+  justify-content: center;
+}
+
 /* HOME PAGE CSS*/
 .homePageContainer {
   padding-top: 2rem;

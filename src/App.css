@@ -82,79 +82,6 @@
   letter-spacing: 2px;
 }
 
-/* RECIPE PAGE CSS */
-
-.recipeLPContainer {
-  padding-top: 2rem;
-  max-width: 1000px;
-}
-
-.card {
-  border-color: #3C422E;
-  background-color: #F5F3E2;
-}
-
-.cardLine {
-  color:#3C422E;
-  opacity: 100%;
-  margin: 0px;
-}
-
-.recipeCardTitle {
-  font-family: 'Zilla Slab', serif;
-  color:#3C422E;
-  text-align: center;
-}
-
-.recipeCol {
-  padding: 13px;
-}
-
-.recipePageRecipeCardImg {
-  z-index: 1;
-}
-
-.recipeOverlay {
-  background-color: #3C422E;
-  border-radius: 25px;
-  height: calc( 100% - 114px);
-  position: absolute;
-  bottom: 0px;
-  right: -25px;
-  top: 20px;
-}
-
-.pagination{
-  --bs-pagination-border-color: #3C422E;
-  --bs-pagination-bg: #F5F3E2;
-  --bs-pagination-active-bg: #3C422E;
-  --bs-pagination-active-border-color: #3C422E;
-  --bs-pagination-hover-bg: #a5aa52;
-  --bs-pagination-hover-border-color: #a5aa52;
-  --bs-pagination-hover-color: #F5F3E2;
-  --bs-pagination-color: #3C422E;
-}
-
-.recipeButton {
-  background-color: #3C422E;
-  border-color: #3C422E;
-  border-radius: 63px;
-  width: 50%;
-  align-self: center;
-  margin: 17px;
-
-  --bs-btn-hover-bg: #a5aa52;
-  --bs-btn-hover-border-color: #a5aa52;
-  --bs-btn-hover-color: #F5F3E2;
-  --bs-btn-active-color: #F5F3E2;
-  --bs-btn-active-bg: #a5aa52;
-  --bs-btn-active-border-color: #a5aa52;
-}
-
-.recipePagination {
-  justify-content: center;
-}
-
 /* HOME PAGE CSS*/
 .homePageContainer {
   padding-top: 2rem;
@@ -224,6 +151,67 @@
 
 .aboutPageImg {
   border-radius: 300px 300px 25px 25px;
+}
+/* RECIPE PAGE CSS */
+
+.recipeLPContainer {
+  padding-top: 2rem;
+  max-width: 1000px;
+}
+
+.card {
+  border-color: #3C422E;
+  background-color: #F5F3E2;
+}
+
+.cardLine {
+  color:#3C422E;
+  opacity: 100%;
+  margin: 0px;
+}
+
+.recipeCardTitle {
+  font-family: 'Zilla Slab', serif;
+  color:#3C422E;
+  text-align: center;
+}
+
+.recipeCol {
+  padding: 13px;
+}
+
+.recipePageRecipeCardImg {
+  z-index: 1;
+}
+
+.recipeOverlay {
+  background-color: #3C422E;
+  border-radius: 25px;
+  height: calc( 100% - 114px);
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+  top: 20px;
+}
+
+.recipeButton {
+  background-color: #3C422E;
+  border-color: #3C422E;
+  border-radius: 63px;
+  width: 50%;
+  align-self: center;
+  margin: 17px;
+
+  --bs-btn-hover-bg: #a5aa52;
+  --bs-btn-hover-border-color: #a5aa52;
+  --bs-btn-hover-color: #F5F3E2;
+  --bs-btn-active-color: #F5F3E2;
+  --bs-btn-active-bg: #a5aa52;
+  --bs-btn-active-border-color: #a5aa52;
+}
+
+.recipePagination {
+  justify-content: center;
 }
 /* SUB RECIPE CSS */
 .subRecipeIngredientCol {

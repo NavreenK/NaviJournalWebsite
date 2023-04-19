@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import lemonade from '../pages/lemonade pic copy.jpg';
 import pasta from '../pages/vodka sauce pasta copy.jpg';
 import greenpasta from '../pages/avocado pesto pasta pic copy.jpg';
@@ -113,6 +112,39 @@ const recipes = [
   },
   {
     id: "4",
+    name: "Strawberry Vanilla Cake",
+    description: "Summer has never looked better",
+    pic: lemonade,
+    ingredients: [
+      {
+        "quantity": "1 cup",
+        "name": "sugar"
+      },
+      {
+        "quantity": "1 cup",
+        "name": "water"
+      },
+      {
+        "quantity": "4",
+        "name": "lemons"
+      },
+      {
+        "quantity": "2 1/2 cup",
+        "name": "water"
+      },
+      {
+        "quantity": "1/4 cup",
+        "name": "blueberries"
+      },
+      {
+        "quantity": "2 tbsp",
+        "name": "lavender"
+      }
+    ],
+    instructions: ["do something", "do something 2", "do something 3"]
+  },
+  {
+    id: "5",
     name: "Strawberry Vanilla Cake",
     description: "Summer has never looked better",
     pic: lemonade,

@@ -2,11 +2,9 @@ import './../App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import lemonade from './lemonade pic.jpg';
-import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import { render } from '@testing-library/react';
-import {useLocation, Link, Route, Routes} from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 /* local data*/
 import recipes from '../data/recipesDB';
 
@@ -38,10 +36,10 @@ function SubRecipe() {
             {subrecipe.ingredients.map((e) => (
               <ul><li id="ingredientLists">{e.quantity} {e.name}</li></ul>
             ))}
-            {subrecipe.ingredients2 ? <h6 id="subRecipeIngredientHeader">{subrecipe.ingredients2Header}</h6>: <h2></h2>}
-            {subrecipe.ingredients2 ? subrecipe.ingredients2.map((e) => (
+            {subrecipe.ingredients2 && <h6 id="subRecipeIngredientHeader">{subrecipe.ingredients2Header}</h6>}
+            {subrecipe.ingredients2 && subrecipe.ingredients2.map((e) => (
               <ul><li id="ingredientLists">{e.quantity} {e.name}</li></ul>
-            )): <h2></h2>}
+            ))}
           </Col>
           <Col className='subRecipeCol'>
             <h3 id='subRecipeIngredientHeader'>Instructions</h3>

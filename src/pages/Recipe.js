@@ -3,26 +3,26 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Pagination from 'react-bootstrap/Pagination';
+//import Pagination from 'react-bootstrap/Pagination';
+import Pagination from '@mui/material/Pagination';
 /* local data*/
 import recipes from '../data/recipesDB';
 import { useState } from 'react';
 /** Sub Recipe Routing */
-import {Link, Route, Routes} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 function Recipe() {
-    const pages = useState();
-
-    let active = 1;
-    let items = [];
-    for (let number = 1; number <= 5; number++) {
-      items.push(
-        <Pagination.Item key={number} active={number === active}>
-          {number}
-        </Pagination.Item>,
-      );
-    }
+    let [page, setPage] = useState(1);
+    let totalPages = Math.ceil(recipes.length/4);
+    const perPage = 4;
+    const [recipeData, setRecipeData] = useState(recipes.slice(0,perPage));
+    const handleChange = (e, p) => {
+      setPage(p);
+      let end = perPage*p;
+      let start = (end-4);
+      setRecipeData(recipes.slice(start,end));
+    };
     return (
     <div >
     <div className="pageHeader">
@@ -33,7 +33,7 @@ function Recipe() {
     </div>
       <Container className='recipeLPContainer'>
         <Row xs={1} md={2}>
-            {recipes.map((e) => (
+            {recipeData.map((e) => (
                 <Col className='recipeCol'>
                     <Card href="#">
                     <Card.Img className='recipePageRecipeCardImg' variant="top" src={e.pic}/>
@@ -46,7 +46,10 @@ function Recipe() {
                 </Col>
             ))}
         </Row>
-        <Pagination className='recipePagination' size="sm">{items}</Pagination>
+        <Pagination className='recipePagination pagination' page={page} count={totalPages} shape="rounded"
+        onChange={handleChange}
+        sx={{'.Mui-selected': {backgroundColor: '#3C422E !important',color: '#F5F3E2'}}}>
+        </Pagination>
       </Container>
     </div>
   )

@@ -2,10 +2,8 @@ import './../App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
-import proxy from './greenPlaceholder.png';
-import drinks from './random drink pic copy.jpg';
+/* images*/
 import pasta from './vodka sauce pasta.jpg';
 import greenpasta from './avocado pesto pasta pic.jpg';
 import lemonade from './lemonade pic.jpg';

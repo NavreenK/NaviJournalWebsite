@@ -16,7 +16,6 @@
 }
 
 .footer {
-  background-color: #a5aa52 !important;
   margin-top: 10px;
   bottom: 0;
   width: 100%; 
@@ -225,4 +224,37 @@
 
 .aboutPageImg {
   border-radius: 300px 300px 25px 25px;
+}
+/* SUB RECIPE CSS */
+.subRecipeIngredientCol {
+  font-family: 'Zilla Slab', serif;
+  color:#3C422E;
+  background-color: #fffeed;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.subRecipeCol {
+  font-family: 'Zilla Slab', serif;
+  color:#3C422E;
+  margin: 10px;
+}
+
+.subRecipeCard {
+  border: none;
+}
+
+.subRecipeImg {
+  width: 50%;
+  align-self: center;
+  border-radius: 25px;
+  border: 10px solid #3C422E;
+}
+
+#subRecipeIngredientHeader {
+  font-weight: bold;
+}
+
+#ingredientLists {
+  font-size: 1em;
 }

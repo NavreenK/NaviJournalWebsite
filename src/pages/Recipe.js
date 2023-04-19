@@ -25,7 +25,7 @@ function Recipe() {
     }
     return (
     <div >
-    <div class="pageHeader">
+    <div className="pageHeader">
         <Container>
             <h1>Recipes</h1>
             <h6>Novice, but confident cook equals some good eats</h6>
@@ -39,8 +39,7 @@ function Recipe() {
                     <Card.Img className='recipePageRecipeCardImg' variant="top" src={e.pic}/>
                     <Card.Body>
                     <Card.Title className='recipeCardTitle'>{e.name}</Card.Title>
-                    <Card.Text>Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</Card.Text>
+                    <Card.Text>{e.description}</Card.Text>
                     </Card.Body>
                     <Button className='recipeButton' as={Link} to='/subrecipe' state={{id: e.id}}>Read More</Button>{' '}
                     </Card>

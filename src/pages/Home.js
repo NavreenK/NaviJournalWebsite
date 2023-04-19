@@ -13,7 +13,7 @@ import lemonade from './lemonade pic.jpg';
 function Home() {
   return (
     <div>
-    <div class="pageHeader">
+    <div className="pageHeader">
       <Container>
         <h1>Adventures of Navi</h1>
         <h6>Food + Places + Navi in the wild</h6>
@@ -33,7 +33,7 @@ function Home() {
           </Col>
         </Row>
     </Container>
-    <div class="pageMidSection">
+    <div className="pageMidSection">
       <Container>
         <h4>What is Navi's Cookbook?</h4>
         <h3>Check out one of my featured recipies below or navigate to the recipe page to see my entire archive!</h3>

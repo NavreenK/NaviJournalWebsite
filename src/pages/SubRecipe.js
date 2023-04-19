@@ -19,21 +19,35 @@ function SubRecipe() {
 
   return (
     <div>
-      <div class="pageHeader">
+      <div className="pageHeader">
         <Container>
           <h1>{subrecipe.name}</h1>
-          <h6>Live Laugh Love</h6>
+          <h6>{subrecipe.description}</h6>
         </Container>
       </div>
       <Container className='aboutPageContainer'>
-      <Row xs={1} md={2}>
-          <Col className='aboutPageCol'>
-            <h2>hello world!</h2>
-          </Col>
-          <Col>
-            <Card className='homePageRecipeCard'>
-                <Card.Img className='aboutPageImg' variant="top" src={subrecipe.pic}/>
+      <Row xs={1} md={1}>
+          <Col className='subRecipeCol'>
+            <Card className='subRecipeCard'>
+                <Card.Img className='subRecipeImg' width="5000px" variant="top" src={subrecipe.pic}/>
             </Card>
+            <h2>Serves: 2</h2>
+          </Col>
+          <Col className='subRecipeCol subRecipeIngredientCol'>
+            <h3 id='subRecipeIngredientHeader'>Ingredients</h3>
+            {subrecipe.ingredients.map((e) => (
+              <ul><li id="ingredientLists">{e.quantity} {e.name}</li></ul>
+            ))}
+            {subrecipe.ingredients2 ? <h6 id="subRecipeIngredientHeader">{subrecipe.ingredients2Header}</h6>: <h2></h2>}
+            {subrecipe.ingredients2 ? subrecipe.ingredients2.map((e) => (
+              <ul><li id="ingredientLists">{e.quantity} {e.name}</li></ul>
+            )): <h2></h2>}
+          </Col>
+          <Col className='subRecipeCol'>
+            <h3 id='subRecipeIngredientHeader'>Instructions</h3>
+            {subrecipe.instructions.map((e,index) => (
+              <p>{index+1}. {e}</p>
+            ))}
           </Col>
         </Row>
       </Container>

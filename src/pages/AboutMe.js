@@ -12,7 +12,7 @@ function AboutMe() {
   return (
     <div>
       <style>{footerCss}</style>
-      <div class="pageHeader">
+      <div className="pageHeader">
         <Container>
           <h1>About Me</h1>
           <h6>Live Laugh Love</h6>

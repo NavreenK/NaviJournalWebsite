@@ -45,8 +45,8 @@ function NavBar() {
           </Col>
           <Col className='footerCol'>
             <h6>Follow Me</h6>
-            <Nav.Link as={Link} to='/recipe'>Recipes</Nav.Link>{' '}
-            <Nav.Link as={Link} to='/aboutme'>About</Nav.Link>{' '}
+            <Nav.Link as={Link} to='/recipe'>GitHub</Nav.Link>{' '}
+            <Nav.Link as={Link} to='/aboutme'>LinkedIn</Nav.Link>{' '}
           </Col>
         </Row>
         <Row xs={1} md={1}>

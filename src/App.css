@@ -43,6 +43,11 @@
   color: #F6E6D9;
   border: #F6E6D9;
 }
+
+.nav-link:hover {
+  color: #f3ecbf;
+}
+
 .navbarButton {
   border-radius: 23px;
   padding-left: 40px;
@@ -84,7 +89,7 @@
 
 /* HOME PAGE CSS*/
 .homePageContainer {
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .homePageContainerTop {
@@ -122,8 +127,15 @@
   background-color: #F5F3E2;
 }
 
-.homePageRecipeCardImg {
-  border-radius: 25px;
+.homePageRecipeCard:hover {
+  background: #c9cc8f;
+  border-color: #c9cc8f;
+}
+
+@media (max-width: 1200px) {
+  .homePageRecipeCardTitle {
+    font-size: 0.85rem;
+  }
 }
 
 /* ABOUT PAGE CSS */
@@ -162,6 +174,8 @@
 .card {
   border-color: #3C422E;
   background-color: #F5F3E2;
+  --bs-link-color: #F5F3E2;
+  --bs-link-hover-color: #3C422E;
 }
 
 .cardLine {
@@ -194,6 +208,7 @@
   top: 20px;
 }
 
+
 .recipeButton {
   background-color: #3C422E;
   border-color: #3C422E;
@@ -202,12 +217,12 @@
   align-self: center;
   margin: 17px;
 
-  --bs-btn-hover-bg: #a5aa52;
-  --bs-btn-hover-border-color: #a5aa52;
+  --bs-btn-hover-bg: #c9cc8f;
+  --bs-btn-hover-border-color: #c9cc8f;
   --bs-btn-hover-color: #F5F3E2;
   --bs-btn-active-color: #F5F3E2;
-  --bs-btn-active-bg: #a5aa52;
-  --bs-btn-active-border-color: #a5aa52;
+  --bs-btn-active-bg: #c9cc8f;
+  --bs-btn-active-border-color: #c9cc8f;
 }
 
 .recipePagination {

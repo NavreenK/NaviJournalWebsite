@@ -14,8 +14,8 @@ import Button from 'react-bootstrap/Button';
 
 function Recipe() {
     let [page, setPage] = useState(1);
-    let totalPages = Math.ceil(recipes.length/4);
     const perPage = 4;
+    let totalPages = Math.ceil(recipes.length/perPage);
     const [recipeData, setRecipeData] = useState(recipes.slice(0,perPage));
     const handleChange = (e, p) => {
       setPage(p);
@@ -39,7 +39,6 @@ function Recipe() {
                     <Card.Img className='recipePageRecipeCardImg' variant="top" src={e.pic}/>
                     <Card.Body>
                     <Card.Title className='recipeCardTitle'>{e.name}</Card.Title>
-                    <Card.Text>{e.description}</Card.Text>
                     </Card.Body>
                     <Button className='recipeButton' as={Link} to='/subrecipe' state={{id: e.id}}>Read More</Button>{' '}
                     </Card>

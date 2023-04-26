@@ -259,11 +259,15 @@
   width: 50%;
   align-self: center;
   border-radius: 25px;
-  border: 10px solid #3C422E;
+  border: 5px solid #3C422E;
 }
 
 #subRecipeIngredientHeader {
   font-weight: bold;
+}
+
+#subRecipeYield {
+  padding-top: 23px;
 }
 
 #ingredientLists {

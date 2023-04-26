@@ -34,7 +34,7 @@ function SubRecipe() {
             <Card className='subRecipeCard'>
                 <Card.Img className='subRecipeImg' width="5000px" variant="top" src={subrecipe.image}/>
             </Card>
-            <h3>Serves: {subrecipe.recipeYield}</h3>
+            <h4 id="subRecipeYield">Serves: {subrecipe.recipeYield}</h4>
           </Col>
           <Col className='subRecipeCol subRecipeIngredientCol'>
             <h3 id='subRecipeIngredientHeader'>Ingredients</h3>

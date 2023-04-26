@@ -32,7 +32,7 @@ function SubRecipe() {
       <Row xs={1} md={1}>
           <Col className='subRecipeCol'>
             <Card className='subRecipeCard'>
-                <Card.Img className='subRecipeImg' width="5000px" variant="top" src={subrecipe.pic}/>
+                <Card.Img className='subRecipeImg' width="5000px" variant="top" src={subrecipe.image}/>
             </Card>
             <h3>Serves: {subrecipe.recipeYield}</h3>
           </Col>

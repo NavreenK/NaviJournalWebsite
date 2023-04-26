@@ -5,13 +5,14 @@ import strawberryCroffle from '../images/strawberryCroffle.jpg';
 import matchaCookie from '../images/matchacookies.jpeg';
 import { cleanup } from '@testing-library/react';
 
+/* Use Google Dev documentation for Recipe to create recipe JSON object: https://developers.google.com/search/docs/appearance/structured-data/recipe */
 const recipes = [
   {
     id: "1",
     name: "Blueberry Lavender Lemonade",
     description: "Tastes like summer evenings, playing cards under the shade",
     recipeYield: "1 bottle",
-    pic: lemonade,
+    image: lemonade,
     ingredients: [
       {
         "quantity": "1 cup",
@@ -58,7 +59,7 @@ const recipes = [
     name: "Vodka Sauce Pasta",
     description: "Pretending to be off a coast in Italy has never been more possible",
     recipeYield: "2",
-    pic: pasta,
+    image: pasta,
     ingredients: [
       {
         "quantity": "1/4 of a",
@@ -122,7 +123,7 @@ const recipes = [
     name: "Avocado Pesto Pasta",
     description: "Eat your greens",
     recipeYield: "2",
-    pic: greenpasta,
+    image: greenpasta,
     ingredients: [
       {
         "quantity": "1",
@@ -179,7 +180,7 @@ const recipes = [
     name: "Matcha White Chocolate Chip Cookies",
     description: "Eat your greens",
     recipeYield: "6",
-    pic: matchaCookie,
+    image: matchaCookie,
     ingredients: [
       {
         "quantity": "1 & 1/4 cup",
@@ -236,7 +237,7 @@ const recipes = [
     name: "Strawberry Croffles",
     description: "Summer has never looked better",
     recipeYield: "3",
-    pic: strawberryCroffle,
+    image: strawberryCroffle,
     ingredients: [
       {
         "quantity": "2-3",

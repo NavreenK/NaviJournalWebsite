@@ -39,7 +39,7 @@ function Recipe() {
             {recipeData.map((e) => (
                 <Col className='recipeCol'>
                     <Card href="#">
-                    <Card.Img className='recipePageRecipeCardImg' variant="top" src={e.pic}/>
+                    <Card.Img className='recipePageRecipeCardImg' variant="top" src={e.image}/>
                     <Card.Body>
                     <Card.Title className='recipeCardTitle'>{e.name}</Card.Title>
                     </Card.Body>

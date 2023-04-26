@@ -1,16 +1,16 @@
 import './../App.css';
+/* functionality imports*/
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-//import Pagination from 'react-bootstrap/Pagination';
 import Pagination from '@mui/material/Pagination';
-/* local data*/
-import recipes from '../data/recipesDB';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 /** Sub Recipe Routing */
 import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+/* local data*/
+import recipes from '../data/recipesDB';
 
 function Recipe() {
     let [page, setPage] = useState(1);
@@ -23,6 +23,9 @@ function Recipe() {
       let start = (end-4);
       setRecipeData(recipes.slice(start,end));
     };
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
     return (
     <div >
     <div className="pageHeader">

@@ -1,13 +1,20 @@
 import './../App.css';
+/* functionality imports*/
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import lemonade from '../pages/lemonade pic copy.jpg';
 import Card from 'react-bootstrap/Card';
+import { useEffect } from "react";
+/* image import */
+import aboutme from '../images/aboutme.jpeg';
+/* testing library import */
 import { render } from '@testing-library/react';
 
 function AboutMe() {
   const footerCss = " @media (min-width: 2000px) {.footer { position: absolute;}}"; 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <style>{footerCss}</style>
@@ -21,13 +28,16 @@ function AboutMe() {
       <Row xs={1} md={2}>
           <Col className='aboutPageCol'>
             <h2>hello world!</h2>
-            <h5>my name is navi. i am a software engineer by day, devastatingly gorgeous creative by night.</h5>
-            <h5>welcome to my fun project where i share things i have been cooking and all the fun i have.</h5>
+            <p>my name is navi. i am a software engineer.
+              this project was created for me to practice my web-development skills and pick up on react.js. 
+              I also use React bootstrap and Material UI on this project. 
+              This project is a work-in-progress so please feel free to let me know how I can improve. 
+            </p>
             <h5>enjoy!</h5>
           </Col>
           <Col>
-            <Card className='homePageRecipeCard'>
-                <Card.Img className='aboutPageImg' variant="top" src={lemonade}/>
+            <Card id='homePageRecipeCard'>
+                <Card.Img className='aboutPageImg' variant="top" src={aboutme}/>
             </Card>
           </Col>
         </Row>

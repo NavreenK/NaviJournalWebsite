@@ -1,8 +1,8 @@
-import lemonade from '../pages/lemonade pic copy.jpg';
-import pasta from '../pages/vodka sauce pasta copy.jpg';
-import greenpasta from '../pages/avocado pesto pasta pic copy.jpg';
-import strawberryCroffle from '../pages/strawberryCroffle.jpg';
-import matchaCookie from '../pages/matchacookies.jpeg';
+import lemonade from '../images/lemonade pic copy.jpg';
+import pasta from '../images/vodka sauce pasta copy.jpg';
+import greenpasta from '../images/avocado pesto pasta pic copy.jpg';
+import strawberryCroffle from '../images/strawberryCroffle.jpg';
+import matchaCookie from '../images/matchacookies.jpeg';
 import { cleanup } from '@testing-library/react';
 
 const recipes = [

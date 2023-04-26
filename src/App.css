@@ -13,6 +13,7 @@
 
 .footerContainer h6 {
   color: #F6E6D9;
+  font-family: "Archivo Black", sans-serif;
 }
 
 .footer {
@@ -35,7 +36,7 @@
   font-family: "Archivo Black", sans-serif;
   color: #F6E6D9;
 }
-.navbar-brand:hover { 
+.navbar-brand:focus, .navbar-brand:hover { 
   color: #f3ecbf;
 }
 
@@ -44,8 +45,9 @@
   border: #F6E6D9;
 }
 
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: #f3ecbf;
+  text-decoration: underline;
 }
 
 .navbarButton {
@@ -95,7 +97,7 @@
 .homePageContainerTop {
   padding: 0;
   margin: 0;
-  background-image: url("pages/olive\ tree.png");
+  background-image: url("images/olive\ tree.png");
   max-width: 3000px;
 }
 
@@ -118,11 +120,16 @@
 .homePageCard {
   border-color: #c9cc8f;
   background-color: #c9cc8f;
-  background-image: url("pages/olive\ tree.png");
+  background-image: url("images/olive\ tree.png");
   min-height: 250px;
 }
 
 .homePageRecipeCard {
+  border-color: #F5F3E2;
+  background-color: #F5F3E2;
+}
+
+#homePageRecipeCard {
   border-color: #F5F3E2;
   background-color: #F5F3E2;
 }
@@ -212,6 +219,7 @@
 .recipeButton {
   background-color: #3C422E;
   border-color: #3C422E;
+  color: #F5F3E2;
   border-radius: 63px;
   width: 50%;
   align-self: center;
@@ -219,8 +227,8 @@
 
   --bs-btn-hover-bg: #c9cc8f;
   --bs-btn-hover-border-color: #c9cc8f;
-  --bs-btn-hover-color: #F5F3E2;
-  --bs-btn-active-color: #F5F3E2;
+  --bs-btn-hover-color: #3C422E;
+  --bs-btn-active-color: #3C422E;
   --bs-btn-active-bg: #c9cc8f;
   --bs-btn-active-border-color: #c9cc8f;
 }

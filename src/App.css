@@ -5,6 +5,7 @@
 
 .bg-dark { /* navbar background color*/ 
   background-color: #3C422E !important;
+  padding: 15px;
 }
 
 .footerContainer {
@@ -35,6 +36,7 @@
 .navbar-brand { /* navbar main title */
   font-family: "Archivo Black", sans-serif;
   color: #F6E6D9;
+  font-size: inherit;
 }
 .navbar-brand:focus, .navbar-brand:hover { 
   color: #f3ecbf;
@@ -84,9 +86,11 @@
   padding: 70px;
 }
 
-.pageHeader h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
+@media (min-width: 450px) {
+  .pageHeader h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
 }
 
 /* HOME PAGE CSS*/

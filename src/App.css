@@ -4,7 +4,7 @@
 }
 
 .bg-dark { /* navbar background color*/ 
-  background-color: #3C422E !important;
+  background-color: var(--color-brand) !important;
   padding: 15px;
 }
 
@@ -13,8 +13,7 @@
 }
 
 .footerContainer h6 {
-  color: #F6E6D9;
-  font-family: "Archivo Black", sans-serif;
+  color: var(--color-accent);
 }
 
 .footer {
@@ -35,20 +34,20 @@
 
 .navbar-brand { /* navbar main title */
   font-family: "Archivo Black", sans-serif;
-  color: #F6E6D9;
+  color: var(--color-accent);
   font-size: inherit;
 }
 .navbar-brand:focus, .navbar-brand:hover { 
-  color: #f3ecbf;
+  color: var(--color-highlight);
 }
 
 .nav-link {
-  color: #F6E6D9;
-  border: #F6E6D9;
+  color: var(--color-accent);
+  border: var(--color-accent);
 }
 
 .nav-link:focus, .nav-link:hover {
-  color: #f3ecbf;
+  color: var(--color-highlight);
   text-decoration: underline;
 }
 
@@ -59,28 +58,28 @@
   margin-left: 9px;
   padding-top: 3px;
   padding-bottom: 3px;
-  color: #F6E6D9;
-  --bs-btn-hover-color: #3C422E;
-  --bs-btn-hover-bg: #F6E6D9;
-  --bs-btn-active-bg: #F6E6D9;
+  color: var(--color-accent);
+  --bs-btn-hover-color: var(--color-brand);
+  --bs-btn-hover-bg: var(--color-accent);
+  --bs-btn-active-bg: var(--color-accent);
 }
 .navbar-toggler {
   border: none;
   font-family: 'Zilla Slab', serif;
-  color: #F6E6D9;
+  color: var(--color-accent);
 }
 
 /* header and midsection css -- used on all pages */
 .pageHeader {
-  color: #F6E6D9;
-  background-color: #3C422E;
+  color: var(--color-accent);
+  background-color: var(--color-brand);
   font-family: 'Zilla Slab', serif;
   text-align: center;
   padding: 83px;
 }
 
 .pageMidSection {
-  color: #3C422E;
+  color: var(--color-brand);
   font-family: 'Zilla Slab', serif;
   text-align: center;
   padding: 70px;
@@ -99,21 +98,20 @@
 }
 
 .homePageContainerTop {
-  padding: 0;
   margin: 0;
   background-image: url("images/olive\ tree.png");
   max-width: 3000px;
 }
 
 .homePageContainerTop .homePageCardBody {
-  color: #F5F3E2;
+  color: var(--color-background);
 }
 
 .homePageCardBody {
   text-align: center;
   font-size: 1rem;
   font-family: 'Zilla Slab', serif;
-  color: #3c422e;
+  color: var(--color-brand);
   margin: 0;
   position: absolute;
   top: 50%;
@@ -122,25 +120,25 @@
 }
 
 .homePageCard {
-  border-color: #c9cc8f;
-  background-color: #c9cc8f;
+  border-color: var(--color-highlight);
+  background-color: var(--color-highlight);
   background-image: url("images/olive\ tree.png");
   min-height: 250px;
+  border: none;
 }
 
 .homePageRecipeCard {
-  border-color: #F5F3E2;
-  background-color: #F5F3E2;
+  border-color: var(--color-background);
+  background-color: var(--color-background);
 }
 
 #homePageRecipeCard {
-  border-color: #F5F3E2;
-  background-color: #F5F3E2;
+  border-color: var(--color-background);
+  background-color: var(--color-background);
 }
 
 .homePageRecipeCard:hover {
-  background: #c9cc8f;
-  border-color: #c9cc8f;
+  background: var(--color-highlight);
 }
 
 @media (max-width: 1200px) {
@@ -151,8 +149,7 @@
 
 /* ABOUT PAGE CSS */
 .aboutPageContainer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .aboutPageCard {
@@ -162,7 +159,7 @@
 
 .aboutPageCol {
   font-family: 'Zilla Slab', serif;
-  color:#3C422E;
+  color:var(--color-brand);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -183,21 +180,21 @@
 }
 
 .card {
-  border-color: #3C422E;
-  background-color: #F5F3E2;
-  --bs-link-color: #F5F3E2;
-  --bs-link-hover-color: #3C422E;
+  border-color: var(--color-brand);
+  background-color: var(--color-background);
+  --bs-link-color: var(--color-background);
+  --bs-link-hover-color: var(--color-brand);
 }
 
 .cardLine {
-  color:#3C422E;
+  color:var(--color-brand);
   opacity: 100%;
   margin: 0px;
 }
 
 .recipeCardTitle {
   font-family: 'Zilla Slab', serif;
-  color:#3C422E;
+  color:var(--color-brand);
   text-align: center;
 }
 
@@ -210,7 +207,7 @@
 }
 
 .recipeOverlay {
-  background-color: #3C422E;
+  background-color: var(--color-brand);
   border-radius: 25px;
   height: calc( 100% - 114px);
   position: absolute;
@@ -221,20 +218,20 @@
 
 
 .recipeButton {
-  background-color: #3C422E;
-  border-color: #3C422E;
-  color: #F5F3E2;
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-background);
   border-radius: 63px;
   width: 50%;
   align-self: center;
   margin: 17px;
 
-  --bs-btn-hover-bg: #c9cc8f;
-  --bs-btn-hover-border-color: #c9cc8f;
-  --bs-btn-hover-color: #3C422E;
-  --bs-btn-active-color: #3C422E;
-  --bs-btn-active-bg: #c9cc8f;
-  --bs-btn-active-border-color: #c9cc8f;
+  --bs-btn-hover-bg: var(--color-highlight);
+  --bs-btn-hover-border-color: var(--color-brand);
+  --bs-btn-hover-color: var(--color-brand);
+  --bs-btn-active-color: var(--color-brand);
+  --bs-btn-active-bg: var(--color-highlight);
+  --bs-btn-active-border-color: var(--color-highlight);
 }
 
 .recipePagination {
@@ -243,16 +240,16 @@
 /* SUB RECIPE CSS */
 .subRecipeIngredientCol {
   font-family: 'Zilla Slab', serif;
-  color:#3C422E;
-  background-color: #fffeed;
+  color:var(--color-brand);
+  background-color: var(--color-background-contrast);
   border-radius: 25px;
   padding: 30px;
 }
 
 .subRecipeCol {
   font-family: 'Zilla Slab', serif;
-  color:#3C422E;
-  margin: 10px;
+  color:var(--color-brand);
+  margin-top: 10px;
 }
 
 .subRecipeCard {
@@ -260,10 +257,10 @@
 }
 
 .subRecipeImg {
-  width: 50%;
   align-self: center;
   border-radius: 25px;
-  border: 5px solid #3C422E;
+  max-width: 700px;
+  border: 5px solid var(--color-brand);
 }
 
 #subRecipeIngredientHeader {

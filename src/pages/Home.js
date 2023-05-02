@@ -46,7 +46,7 @@ function Home() {
       <Row xs={1} md={3}>
           {homePageRecipes.map((e) => (
             <Col className='recipeCol'>
-                <Card className='homePageRecipeCard' as={Link} to='/subrecipe' state={{id: e.id}}>
+                <Card className='homePageRecipeCard' as={Link} to={`/subrecipe?id=${e.id}`} state={{id: e.id}}>
                     <Card.Img className='homePageRecipeCardImg' variant="top" src={e.image}/>
                     <Card.Body>
                     <Card.Title className='homePageRecipeCardTitle recipeCardTitle'>{e.name}</Card.Title>

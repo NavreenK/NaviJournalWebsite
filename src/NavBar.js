@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Recipe from './pages/Recipe';
 import SubRecipe from './pages/SubRecipe';
+import PageNotFound from './pages/404';
 /* functionality imports*/
 import {Link, Route, Routes} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
@@ -33,6 +34,7 @@ function NavBar() {
         <Route path="/recipe/" element={<Recipe/>} />
         <Route path="/aboutme" element={<AboutMe/>} />
         <Route path="/subrecipe" element={<SubRecipe/>} />
+        <Route path="*" element={<PageNotFound/>} />
       </Routes>
       <Navbar className='footer' bg="dark" variant="dark" expand="lg">
         <Container className='footerContainer'>

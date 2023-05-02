@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import {useLocation} from 'react-router-dom';
+import {useLocation, useNavigate} from 'react-router-dom';
 import { useEffect } from "react";
 /* local data*/
 import recipes from '../data/recipesDB';
@@ -14,12 +14,18 @@ import { render } from '@testing-library/react';
 function SubRecipe() {
   
   const location = useLocation();
-  const state = location.state;
+  let navigate = useNavigate();
 
-  let subrecipe = recipes.find(item => item.id === state.id);
+  const searchParams = new URLSearchParams(location.search)
+  let subrecipe = recipes.find(item => item.id === searchParams.get('id'));
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if(!subrecipe){
+    return navigate("*");
+  }
   return (
     <div>
       <div className="pageHeader">

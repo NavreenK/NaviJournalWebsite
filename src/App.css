@@ -161,6 +161,7 @@
   font-family: 'Zilla Slab', serif;
   color:var(--color-brand);
   display: flex;
+  margin-bottom: 22px;
   justify-content: center;
   flex-direction: column;
 }
@@ -231,7 +232,7 @@
   --bs-btn-hover-color: var(--color-brand);
   --bs-btn-active-color: var(--color-brand);
   --bs-btn-active-bg: var(--color-highlight);
-  --bs-btn-active-border-color: var(--color-highlight);
+  --bs-btn-active-border-color: var(--color-brand);
 }
 
 .recipePagination {
@@ -273,4 +274,20 @@
 
 #ingredientLists {
   font-size: 1em;
+}
+
+/* 404 PAGE CSS */
+.pageNotFoundLink:hover {
+  color: var(--color-brand);
+  background-color: var(--color-background);
+  border-color: var(--color-brand);
+}
+.pageNotFoundLink {
+  color: var(--color-background);
+  text-decoration: none;
+  background-color: var(--color-brand);
+  width: fit-content;
+  border-radius: 20px;
+  border: solid;
+  padding: 5px 11px 5px 11px;
 }

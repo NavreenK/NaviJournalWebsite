@@ -43,7 +43,7 @@ function Recipe() {
                     <Card.Body>
                     <Card.Title className='recipeCardTitle'>{e.name}</Card.Title>
                     </Card.Body>
-                    <Button className='recipeButton' as={Link} to='/subrecipe' state={{id: e.id}}>Read More</Button>{' '}
+                    <Button className='recipeButton' as={Link} to={`/subrecipe?id=${e.id}`} state={{id: e.id}}>Read More</Button>{' '}
                     </Card>
                 </Col>
             ))}

@@ -4,13 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import { useEffect } from "react";
 import {Link} from 'react-router-dom';
 /* image import */
 import aboutme from '../images/aboutme.jpeg';
-/* testing library import */
-import { render } from '@testing-library/react';
 
 function PageNotFound() {
   const footerCss = " @media (min-width: 2000px) {.footer { position: absolute;}}"; 

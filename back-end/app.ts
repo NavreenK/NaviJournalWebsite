@@ -3,9 +3,9 @@ import * as bodyParser from "body-parser";
 import * as express from "express";
 import { Logger } from "./logger/logger";
 import Routes from "./routes/routes";
+import uri from './env';
 
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://navreenkaur1:Mongonjconnect23@njrecipecluster.jbentpp.mongodb.net/NJWebsite?retryWrites=true&w=majority";
 mongoose.connect(uri);
 let database = mongoose.connection;
 

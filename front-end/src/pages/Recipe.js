@@ -11,12 +11,24 @@ import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 /* local data*/
 import recipes from '../data/recipesDB';
+import { getAllRecipes } from '../services/getRecipes.js'
 
 function Recipe() {
+  /*let [recipes, setRecipes] = useState([]);
+  useEffect(() => {
+    getAllRecipes()
+    .then(getRecipe => {
+      setRecipes(getRecipe);
+    });
+
+  }, []);*/
+
     let [page, setPage] = useState(1);
     const perPage = 4;
     let totalPages = Math.ceil(recipes.length/perPage);
-    const [recipeData, setRecipeData] = useState(recipes.slice(0,perPage));
+    //console.log(recipes.slice(0,perPage));
+    const initData = recipes.slice(0,perPage);
+    const [recipeData, setRecipeData] = useState(initData);
     const handleChange = (e, p) => {
       setPage(p);
       let end = perPage*p;

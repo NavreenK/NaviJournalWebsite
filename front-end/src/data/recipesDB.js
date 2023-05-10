@@ -13,20 +13,7 @@ const recipes = [
     description: "Tastes like summer evenings, playing cards under the shade",
     recipeYield: "1 bottle",
     image: lemonade,
-    ingredients: [
-      {
-        "quantity": "1 cup",
-        "name": "sugar"
-      },
-      {
-        "quantity": "4",
-        "name": "lemons"
-      },
-      {
-        "quantity": "2 1/2 cup",
-        "name": "water"
-      }
-    ],
+    ingredients: ["1 cup sugar", "4 lemons", "2 1/2 cup water"],
     ingredients2Header: "For the blueberry, lavender simple syrup",
     ingredients2: [
       {
@@ -60,55 +47,10 @@ const recipes = [
     description: "Pretending to be off a coast in Italy has never been more possible",
     recipeYield: "2",
     image: pasta,
-    ingredients: [
-      {
-        "quantity": "1/4 of a",
-        "name": "onion"
-      },
-      {
-        "quantity": "5-7 cloves",
-        "name": "garlic"
-      },
-      {
-        "quantity": "1/4 cup",
-        "name": "tomato paste"
-      },
-      {
-        "quantity": "1 cup",
-        "name": "heavy cream"
-      },
-      {
-        "quantity": "1/2 of a",
-        "name": "lime"
-      },
-      {
-        "quantity": "1/4 stick",
-        "name": "butter"
-      },
-      {
-        "quantity": "1/4 cup",
-        "name": "parmesan cheese"
-      },
-      {
-        "quantity": "1 teaspoon",
-        "name": "salt"
-      },
-      {
-        "quantity": "1 teaspoon",
-        "name": "black pepper"
-      },
-      {
-        "quantity": "1 teaspoon",
-        "name": "red pepper flakes"
-      },
-      {
-        "quantity": "1/2 cup",
-        "name": "pasta water"
-      },
-      {
-        "quantity": "Half bag",
-        "name": "penne pasta"
-      }
+    ingredients: [ "1/4 of a onion", "5-7 cloves garlic", "1/4 cup tomato paste", "1 cup heavy cream", 
+                   "1/2 of a lime", "1/4 stick butter", "1/4 cup parmesan cheese", "1 teaspoon salt",
+                   "1 teaspoon black pepper", "1 teaspoon red pepper flakes", "1/2 cup pasta water",
+                   "Half bag penne pasta"
     ],
     instructions: ["Cook the penne pasta in lightly salted water and save some pasta water for the sauce", 
                   "Dice the onions and garlic. Simmer in olive oil on medium heat", 
@@ -125,50 +67,17 @@ const recipes = [
     recipeYield: "2",
     image: greenpasta,
     ingredients: [
-      {
-        "quantity": "1",
-        "name": "avocado"
-      },
-      {
-        "quantity": "1",
-        "name": "lime"
-      },
-      {
-        "quantity": "2-3 handful",
-        "name": "basil"
-      },
-      {
-        "quantity": "5-7 cloves",
-        "name": "garlic"
-      },
-      {
-        "quantity": "1 cup",
-        "name": "parmesan cheese"
-      },
-      {
-        "quantity": "1/8 cup",
-        "name": "olive oil"
-      },
-      {
-        "quantity": "1/8 cup",
-        "name": "spicy honey"
-      },
-      {
-        "quantity": "1 tablespoon",
-        "name": "crushed red pepper"
-      },
-      {
-        "quantity": "1/2 teaspoon",
-        "name": "salt"
-      },
-      {
-        "quantity": "1/2 cup",
-        "name": "pasta water (as needed)"
-      },
-      {
-        "quantity": "Half bag",
-        "name": "penne"
-      }
+      "1 avocado",
+      "1 lime",
+      "2-3 handful basil",
+      "5-7 cloves garlic",
+      "1 cup parmesan cheese",
+      "1/8 cup olive oil",
+      "1/8 cup spicy honey",
+      "1/2 teaspoon salt",
+      "1 tablespoon red pepper flakes",
+      "1/2 cup pasta water (as needed)",
+      "Half bag penne pasta"
     ],
     instructions: ["Cook the penne pasta as instructed on the box", 
                   "Add the avocado, lime, basil, garlic, parm cheese, olive oil, spicy honey, crushed red pepper, salt, and pasta water to a food processor", 
@@ -181,47 +90,10 @@ const recipes = [
     description: "Eat your greens",
     recipeYield: "6",
     image: matchaCookie,
-    ingredients: [
-      {
-        "quantity": "1 & 1/4 cup",
-        "name": "all-purpose flour"
-      },
-      {
-        "quantity": "1/2 teaspoon",
-        "name": "baking soda"
-      },
-      {
-        "quantity": "1/4 teaspoon",
-        "name": "salt"
-      },
-      {
-        "quantity": "1-2 teaspoon",
-        "name": "matcha powder"
-      },
-      {
-        "quantity": "1 stick (1/2 cup)",
-        "name": "unsalted butter"
-      },
-      {
-        "quantity": "1",
-        "name": "egg"
-      },
-      {
-        "quantity": "1/2 cup",
-        "name": "brown sugar"
-      },
-      {
-        "quantity": "1/4 cup",
-        "name": "white sugar"
-      },
-      {
-        "quantity": "1/4 teaspoon",
-        "name": "vanilla extract"
-      },
-      {
-        "quantity": "1",
-        "name": "white chocolate bar"
-      }
+    ingredients: [ 
+        "1 & 1/4 cup all-purpose flour", "1/2 teaspoon baking soda", "1/4 teaspoon salt", "1-2 teaspoon matcha powder",
+        "1 stick (1/2 cup) unsalted butter", "1 egg", "1/2 cup brown sugar", "1/4 cup white sugar",
+        "1/4 teaspoon vanilla extract", "1 white chocolate bar"
     ],
     instructions: ["In a large bowl, whisk together the dry ingredients: flour, baking soda, salt, and matcha powder. Put aside", 
                   "In a pan over medium heat, melt the butter. Continue whisking the butter until it has browned", 
@@ -239,30 +111,8 @@ const recipes = [
     recipeYield: "3",
     image: strawberryCroffle,
     ingredients: [
-      {
-        "quantity": "2-3",
-        "name": "frozen mini croissants"
-      },
-      {
-        "quantity": "3-4",
-        "name": "strawberries, sliced"
-      },
-      {
-        "quantity": "1 cup",
-        "name": "heavy whipping cream, cold"
-      },
-      {
-        "quantity": "2 tablespoon",
-        "name": "white sugar"
-      },
-      {
-        "quantity": "1/2 teaspoon",
-        "name": "vanilla extract"
-      },
-      {
-        "quantity": "1 tsp",
-        "name": "powdered sugar"
-      }
+      "2-3 frozen mini croissants", "3-4 strawberries, sliced", "1 cup heavy whipping cream, cold",
+      "2 tablespoon white sugar", "1/2 teaspoon vanilla extract","1 tsp powdered sugar"
     ],
     instructions: ["Let the frozen croissants defrost before baking", 
                   "In the meantime, slice the strawberries to use as a topping and put aside", 

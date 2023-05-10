@@ -10,8 +10,17 @@ import { useEffect } from "react";
 import recipes from '../data/recipesDB';
 /* testing library import */
 import { render } from '@testing-library/react';
+/** */
+import { getAllRecipes } from '../services/getRecipes.js'
 
 function SubRecipe() {
+
+  //getAllUsers = () => {
+    getAllRecipes()
+      .then(users => {
+        console.log(users)
+      });
+  //}
   
   const location = useLocation();
   let navigate = useNavigate();
@@ -45,7 +54,7 @@ function SubRecipe() {
           <Col className='subRecipeCol subRecipeIngredientCol'>
             <h3 id='subRecipeIngredientHeader'>Ingredients</h3>
             {subrecipe.ingredients.map((e) => (
-              <ul><li id="ingredientLists">{e.quantity} {e.name}</li></ul>
+              <ul><li id="ingredientLists">{e}</li></ul>
             ))}
             {subrecipe.ingredients2 && <h6 id="subRecipeIngredientHeader">{subrecipe.ingredients2Header}</h6>}
             {subrecipe.ingredients2 && subrecipe.ingredients2.map((e) => (

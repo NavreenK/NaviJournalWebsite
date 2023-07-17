@@ -5,11 +5,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom';
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 /* local data*/
 import recipes from '../data/recipesDB';
 
 function Home() {
+
   let homePageRecipes = recipes.slice(0,3);
   useEffect(() => {
     window.scrollTo(0, 0);

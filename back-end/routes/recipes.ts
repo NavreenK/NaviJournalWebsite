@@ -1,7 +1,6 @@
 import * as bodyParser from "body-parser";
 import * as express from "express";
 import { Logger } from "../logger/logger";
-import recipes from './recipesDB';
 const Recipe = require('./model');
 const router = express.Router();
 
@@ -11,13 +10,13 @@ class Recipes {
     public logger: Logger;
 
     // array to hold all recipes
-    public recipes = recipes;
+    public recipes: any = [];
 
     constructor() {
         this.express = express();
         this.middleware();
         this.routes();
-        this.recipes = recipes;
+        this.recipes = [];
         this.logger = new Logger();
     }
 

@@ -6,27 +6,19 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import {useLocation, useNavigate} from 'react-router-dom';
 import { useEffect } from "react";
-/* local data*/
-import recipes from '../data/recipesDB';
 /* testing library import */
 import { render } from '@testing-library/react';
-/** */
-import { getAllRecipes } from '../services/getRecipes.js'
 
-function SubRecipe() {
-
-  //getAllUsers = () => {
-    getAllRecipes()
-      .then(users => {
-        console.log(users)
-      });
-  //}
+function SubRecipe({data}) {
   
   const location = useLocation();
   let navigate = useNavigate();
 
   const searchParams = new URLSearchParams(location.search)
-  let subrecipe = recipes.find(item => item.id === searchParams.get('id'));
+  console.log(data)
+  console.log(searchParams.get('id'))
+  let subrecipe = data.find(item => item._id === searchParams.get('id'));
+  console.log(subrecipe)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +39,7 @@ function SubRecipe() {
       <Row xs={1} md={1}>
           <Col className='subRecipeCol'>
             <Card className='subRecipeCard'>
-                <Card.Img className='subRecipeImg' width="5000px" variant="top" src={subrecipe.image}/>
+                <Card.Img className='subRecipeImg' width="5000px" variant="top" src={require(`../images/${subrecipe.image}`)}/>
             </Card>
             <h4 id="subRecipeYield">Serves: {subrecipe.recipeYield}</h4>
           </Col>
@@ -58,7 +50,7 @@ function SubRecipe() {
             ))}
             {subrecipe.ingredients2 && <h6 id="subRecipeIngredientHeader">{subrecipe.ingredients2Header}</h6>}
             {subrecipe.ingredients2 && subrecipe.ingredients2.map((e) => (
-              <ul><li id="ingredientLists">{e.quantity} {e.name}</li></ul>
+              <ul><li id="ingredientLists">{e}</li></ul>
             ))}
           </Col>
           <Col className='subRecipeCol'>

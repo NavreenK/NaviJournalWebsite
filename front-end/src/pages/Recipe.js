@@ -9,25 +9,17 @@ import { useState, useEffect } from 'react';
 /** Sub Recipe Routing */
 import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-/* local data*/
-import recipes from '../data/recipesDB';
-import { getAllRecipes } from '../services/getRecipes.js'
 
-function Recipe() {
-  /*let [recipes, setRecipes] = useState([]);
-  useEffect(() => {
-    getAllRecipes()
-    .then(getRecipe => {
-      setRecipes(getRecipe);
-    });
+function Recipe({data}) {
 
-  }, []);*/
+    console.log(data);
 
+    let recipes = data;
     let [page, setPage] = useState(1);
     const perPage = 4;
     let totalPages = Math.ceil(recipes.length/perPage);
-    //console.log(recipes.slice(0,perPage));
     const initData = recipes.slice(0,perPage);
+    //console.log(recipes);
     const [recipeData, setRecipeData] = useState(initData);
     const handleChange = (e, p) => {
       setPage(p);
@@ -35,6 +27,7 @@ function Recipe() {
       let start = (end-4);
       setRecipeData(recipes.slice(start,end));
     };
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -51,11 +44,11 @@ function Recipe() {
             {recipeData.map((e) => (
                 <Col className='recipeCol'>
                     <Card href="#">
-                    <Card.Img className='recipePageRecipeCardImg' variant="top" src={e.image}/>
+                    <Card.Img className='recipePageRecipeCardImg' variant="top" src={require(`../images/${e.image}`)}/>
                     <Card.Body>
                     <Card.Title className='recipeCardTitle'>{e.name}</Card.Title>
                     </Card.Body>
-                    <Button className='recipeButton' as={Link} to={`/subrecipe?id=${e.id}`} state={{id: e.id}}>Read More</Button>{' '}
+                    <Button className='recipeButton' as={Link} to={`/subrecipe?id=${e._id}`} state={{id: e._id}}>Read More</Button>{' '}
                     </Card>
                 </Col>
             ))}

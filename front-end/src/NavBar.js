@@ -14,7 +14,8 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function NavBar() {
+function NavBar({data}) {
+  //console.log(data);
   return (
     <>
       <Navbar id="main-nav" bg="dark" variant="dark" expand="lg">
@@ -31,9 +32,9 @@ function NavBar() {
       </Navbar>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/recipe/" element={<Recipe/>} />
+        <Route path="/recipe/" element={<Recipe data={data}/>} />
         <Route path="/aboutme" element={<AboutMe/>} />
-        <Route path="/subrecipe" element={<SubRecipe/>} />
+        <Route path="/subrecipe" element={<SubRecipe data={data}/>} />
         <Route path="*" element={<PageNotFound/>} />
       </Routes>
       <Navbar className='footer' bg="dark" variant="dark" expand="lg">

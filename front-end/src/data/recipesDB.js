@@ -1,6 +1,6 @@
-import lemonade from '../images/lemonade pic copy.jpg';
-import pasta from '../images/vodka sauce pasta copy.jpg';
-import greenpasta from '../images/avocado pesto pasta pic copy.jpg';
+import lemonade from '../images/blueberryLavenderLemonade.jpg';
+import pasta from '../images/vodkaSaucePasta.jpg';
+import greenpasta from '../images/avocadoPestoPasta.jpg';
 import strawberryCroffle from '../images/strawberryCroffle.jpg';
 import matchaCookie from '../images/matchacookies.jpeg';
 import { cleanup } from '@testing-library/react';

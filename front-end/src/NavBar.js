@@ -31,7 +31,7 @@ function NavBar({data}) {
         </Container>
       </Navbar>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home data={data}/>} />
         <Route path="/recipe/" element={<Recipe data={data}/>} />
         <Route path="/aboutme" element={<AboutMe/>} />
         <Route path="/subrecipe" element={<SubRecipe data={data}/>} />

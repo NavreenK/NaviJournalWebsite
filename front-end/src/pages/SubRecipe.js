@@ -15,10 +15,10 @@ function SubRecipe({data}) {
   let navigate = useNavigate();
 
   const searchParams = new URLSearchParams(location.search)
-  console.log(data)
-  console.log(searchParams.get('id'))
+  //console.log(data)
+  //console.log(searchParams.get('id'))
   let subrecipe = data.find(item => item._id === searchParams.get('id'));
-  console.log(subrecipe)
+  //console.log(subrecipe)
 
   useEffect(() => {
     window.scrollTo(0, 0);

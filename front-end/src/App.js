@@ -13,7 +13,7 @@ function App() {
     });
   },[]);
   
-  if(recip.length != 0){
+  if(recip.length !== 0){
   return (
     <>
        <NavBar data={recip}></NavBar>

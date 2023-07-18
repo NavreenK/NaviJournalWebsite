@@ -5,13 +5,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom';
-import { useState, useEffect } from "react";
-/* local data*/
-import recipes from '../data/recipesDB';
+import { useEffect } from "react";
 
-function Home() {
+function Home({data}) {
 
-  let homePageRecipes = recipes.slice(0,3);
+  let homePageRecipes = data.slice(0,3);
+  //console.log(homePageRecipes)
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -48,7 +47,7 @@ function Home() {
       <Row xs={1} md={3}>
           {homePageRecipes.map((e) => (
             <Col className='recipeCol'>
-                <Card className='homePageRecipeCard' as={Link} to={`/subrecipe?id=${e.id}`} state={{id: e.id}}>
+                <Card className='homePageRecipeCard' as={Link} to={`/subrecipe?id=${e._id}`} state={{id: e._id}}>
                     <Card.Img className='homePageRecipeCardImg' variant="top" src={e.image}/>
                     <Card.Body>
                     <Card.Title className='homePageRecipeCardTitle recipeCardTitle'>{e.name}</Card.Title>

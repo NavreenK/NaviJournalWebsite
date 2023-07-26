@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.aead0d2c.css",
-    "main.js": "/static/js/main.c0271307.js",
-    "static/js/787.0edbcda9.chunk.js": "/static/js/787.0edbcda9.chunk.js",
-    "static/media/matchacookies.jpeg": "/static/media/matchacookies.14b5c467272bc3d9ce94.jpeg",
-    "static/media/lemonade pic copy.jpg": "/static/media/lemonade pic copy.fd66944faa228c75ed38.jpg",
-    "static/media/vodka sauce pasta copy.jpg": "/static/media/vodka sauce pasta copy.d4aa3d702aaa0d300701.jpg",
-    "static/media/avocado pesto pasta pic copy.jpg": "/static/media/avocado pesto pasta pic copy.97f66a4fe5a9bcb29d09.jpg",
-    "static/media/aboutme.jpeg": "/static/media/aboutme.1a6120048fd1d1b2a824.jpeg",
-    "static/media/strawberryCroffle.jpg": "/static/media/strawberryCroffle.5832b2e809cba594de3f.jpg",
-    "static/media/olive tree.png": "/static/media/olive tree.2dc3c9197ad4d84665d7.png",
-    "index.html": "/index.html",
-    "main.aead0d2c.css.map": "/static/css/main.aead0d2c.css.map",
-    "main.c0271307.js.map": "/static/js/main.c0271307.js.map",
-    "787.0edbcda9.chunk.js.map": "/static/js/787.0edbcda9.chunk.js.map"
+    "main.css": "/NavisCookbook/static/css/main.ed9cd8f4.css",
+    "main.js": "/NavisCookbook/static/js/main.457b6f52.js",
+    "static/js/787.0edbcda9.chunk.js": "/NavisCookbook/static/js/787.0edbcda9.chunk.js",
+    "static/media/matchacookies.jpeg": "/NavisCookbook/static/media/matchacookies.14b5c467272bc3d9ce94.jpeg",
+    "static/media/lemonade pic copy.jpg": "/NavisCookbook/static/media/lemonade pic copy.fd66944faa228c75ed38.jpg",
+    "static/media/vodka sauce pasta copy.jpg": "/NavisCookbook/static/media/vodka sauce pasta copy.d4aa3d702aaa0d300701.jpg",
+    "static/media/avocado pesto pasta pic copy.jpg": "/NavisCookbook/static/media/avocado pesto pasta pic copy.97f66a4fe5a9bcb29d09.jpg",
+    "static/media/aboutme.jpeg": "/NavisCookbook/static/media/aboutme.1a6120048fd1d1b2a824.jpeg",
+    "static/media/strawberryCroffle.jpg": "/NavisCookbook/static/media/strawberryCroffle.5832b2e809cba594de3f.jpg",
+    "static/media/olive tree.png": "/NavisCookbook/static/media/olive tree.2dc3c9197ad4d84665d7.png",
+    "index.html": "/NavisCookbook/index.html",
+    "main.ed9cd8f4.css.map": "/NavisCookbook/static/css/main.ed9cd8f4.css.map",
+    "main.457b6f52.js.map": "/NavisCookbook/static/js/main.457b6f52.js.map",
+    "787.0edbcda9.chunk.js.map": "/NavisCookbook/static/js/787.0edbcda9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aead0d2c.css",
-    "static/js/main.c0271307.js"
+    "static/css/main.ed9cd8f4.css",
+    "static/js/main.457b6f52.js"
   ]
 }
